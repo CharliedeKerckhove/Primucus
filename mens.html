@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Primucus</title>
+<!--link to external files-->
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="js/general.js" type="text/javascript" defer></script>
+    <script src="js/products.js" type="text/javascript" defer></script>
+
+<!--responsive layout-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+<!--mobile nav bar-->
+    <nav id="mobileMain">
+      <span id="title"><a href = "index.html">Primucus</a></span>
+      <ul id="menu">
+<!--dropdown menu-->
+        <li class="dropdown" id="mobileDropDown">
+          <a id="dropbtn">
+            <image id="hamburger" src="images/edited/Hamburger.png"></image>
+          </a>
+<!--webpages-->
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="newRange2.html">New Range</a>
+            <a href="mens.html">Mens</a>
+            <a href="womens.html">Womens</a>
+            <a href="aboutUs.html">History</a>
+            <a href="contactUs.html">Contact Us</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+<!--desktop nav bar-->
+    <nav id="main">
+      <ul>
+        <span id="title"><a href = "index.html">Primucus</a></span>
+        <li id="home"><a href="index.html">Home</a></li>
+        <li id="newRange"><a href="newRange2.html">New Range</a></li>
+        <li class="active" id="mens"><a href="mens.html">Mens</a></li>
+        <li id="womens"><a href="womens.html">Womens</a></li>
+        <li class="dropdown" id="aboutUs"><a id="dropbtn">About Us</a>
+          <div class="dropdown-content">
+            <a href="aboutUs.html">History</a>
+            <a href="contactUs.html">Contact Us</a>
+          </div>
+        </li>
+        <li class="dropdown" id="settings"><a id="dropbtn" class="fas fa-cog"></a>
+<!--settings-->
+          <div class="dropdown-content" id="settingsDrop">
+            <a id="textIncrease">A+</a>
+            <a id="textDecrease">A-</a>
+            <a id="colourChange">Colour</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+<!--canvas based animation of logo-->
+    <canvas id="canvas" width="380" height="280"></canvas>
+
+    <section id="productContainer">
+      <div id="productTitle">
+        Men's Clothing
+        <select id="currencies">
+<!--currency selector-->
+            <option class = "currencies" value = "0">USD</option>
+            <option class = "currencies" value = "1">GBP</option>
+            <option class = "currencies" value = "2">EUR</option>
+            <option class = "currencies" value = "3">JPY</option>
+            <option class = "currencies" value = "4">CAD</option>
+            <option class = "currencies" value = "5">CHF</option>
+        </select>
+      </div>
+      <main id="Products">
+<!--images-->
+        <img class="Image" id="firstImage" src="images/edited/m1.jpg" alt="Black zip up jacket.">
+        <img class="Image" id="thirdImage" src="images/edited/m3.jpg" alt="Skin tight shirt in multiple colours.">
+        <img class="Image" id="fifthImage" src="images/edited/m5.jpg" alt="Tight red shorts ideal for running.">
+        <img class="Image" id="seventhImage" src="images/edited/m7.jpg" alt="Think, comfortable pullover.">
+<!--descriptions-->
+        <span class="Description">
+                    Black zip up jacket.
+                </span>
+        <span class="Description">
+                    Skin tight shirt in multiple colours.
+                </span>
+        <span class="Description">
+                    Tight red shorts ideal for running.
+                </span>
+        <span class="Description">
+                    Thick, comfortable pullover.
+                </span>
+<!--prices-->
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 17.99</span>
+        </div>
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 13.50</span>
+        </div>
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 11.99</span>
+        </div>
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 28.99</span>
+        </div>
+<!--images-->
+        <img class="Image" id="secondImage" src="images/edited/m2.jpg" alt="Short sleeve grey t-shirt.">
+        <img class="Image" id="fourthImage" src="images/edited/m4.jpg" alt="Sleeveless hoodie in several colours.">
+        <img class="Image" id="sixthImage" src="images/edited/m6.jpg" alt="Refined slim fit top">
+        <img class="Image" id="eigthImage" src="images/edited/m8.jpg" alt="Cozy grey tracksuit bottoms.">
+<!--descriptions-->
+        <span class="Description">
+                    Short sleeve grey t-shirt.
+                </span>
+        <span class="Description">
+                    Sleeveless hoodie in several colours.
+                </span>
+        <span class="Description">
+                    Refined slim fit top.
+                </span>
+        <span class="Description">
+                    Cozy grey tracksuit bottoms.
+                </span>
+<!--prices-->
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 13.50</span>
+        </div>
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 24.99</span>
+        </div>
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 13.50</span>
+        </div>
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 26.99</span>
+        </div>
+      </main>
+<!--dimmer for images-->
+      <div id="dimmer" class="dimmer">
+        <span id="close"> &times;</span>
+        <img class="enlargedImages2" id="enlargeImg">
+        <div id="caption"></div>
+      </div>
+    </section>
+<!--music player-->
+    <section id="musicContainer">
+      Today's motivational song to help you at the gym is - Eye of the Tiger by Survivor:
+    <audio controls = "controls" id="music">
+      <source src="media/music.ogg" type="audio/ogg">
+      <source src="media/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+<!--custom controls-->
+      <div id= "audioBttns">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <button id="playaudio"><i class="material-icons">play_arrow</i></button>
+        <input type="range" min="0" max="100" value="0" step="1" id="seekbaraudio" class="slider">
+        <span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
+        <button id="volaudio"><i class="material-icons">volume_up</i></button>
+        <input type="range" min="0" max="1" value="1" step="0.1" id="volumeBar" class="slider">
+      </div>
+    </section>
+<!--footer with site map navigation-->         
+    <footer>
+      <span id="title2"><a href = "index.html">Primucus</a></span>
+      <ul>
+        <li id="home"><a href="index.html">Home</a></li>
+        <li id="newRange"><a href="newRange2.html">New Range</a></li>
+        <li id="mens"><a href="mens.html">Mens</a></li>
+        <li id="womens"><a href="womens.html">Womens</a></li>
+        <li id="aboutUs"><a href="aboutUs.html">History</a></li>
+        <li id="contactUs"><a href="contactUs.html">Contact Us</a></li>
+      </ul>
+<!--social media links-->
+      <section id="socialMedia">
+        <div id="facebookbtn" class="fab fa-facebook-f"></div>
+        <div id="twitterbtn" class="fab fa-twitter"></div>
+        <div id="instagrambtn" class="fab fa-instagram"></div>
+        <div id="youtubebtn" class="fab fa-youtube"></div>
+      </section>
+      <span id="signature">Designed and Built by 19003161</span>
+    </footer>
+  </body>
+
+</html>

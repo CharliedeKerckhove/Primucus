@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Primucus</title>
+<!--link to external files-->
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="js/general.js" type="text/javascript" defer></script>
+    <script src="js/products.js" type="text/javascript" defer></script>
+    <script src="js/newRange.js" type="text/javascript" defer></script>
+
+<!--responsive layout-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+<!--mobile nav bar-->
+    <nav id="mobileMain">
+      <span id="title"><a href = "index.html">Primucus</a></span>
+      <ul id="menu">
+<!--dropdown menu-->
+        <li class="dropdown" id="mobileDropDown">
+          <a id="dropbtn">
+            <image id="hamburger" src="images/edited/Hamburger.png"></image>
+          </a>
+<!--webpages-->
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="newRange2.html">New Range</a>
+            <a href="mens.html">Mens</a>
+            <a href="womens.html">Womens</a>
+            <a href="aboutUs.html">History</a>
+            <a href="contactUs.html">Contact Us</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+<!--desktop nav bar--> 
+    <nav id="main">
+      <ul>
+        <span id="title"><a href = "index.html">Primucus</a></span>
+        <li id="home"><a href="index.html">Home</a></li>
+        <li class="active" id="newRange"><a href="newRange2.html">New Range</a></li>
+        <li id="mens"><a href="mens.html">Mens</a></li>
+        <li id="womens"><a href="womens.html">Womens</a></li>
+        <li class="dropdown" id="aboutUs"><a id="dropbtn">About Us</a>
+          <div class="dropdown-content">
+            <a href="aboutUs.html">History</a>
+            <a href="contactUs.html">Contact Us</a>
+          </div>
+        </li>
+        <li class="dropdown" id="settings"><a id="dropbtn" class="fas fa-cog"></a>
+<!--settings-->
+          <div class="dropdown-content" id="settingsDrop">
+            <a id="textIncrease">A+</a>
+            <a id="textDecrease">A-</a>
+            <a id="colourChange">Colour</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+<!--canvas based animation of logo-->
+    <canvas id="canvas" width="380" height="280"></canvas>
+<!--advert images-->
+    <figure id="advertContainer">
+      <img class= "adverts" src="images/edited/advert0.jpg">
+      <img class= "adverts" src="images/edited/advert1.jpg">
+      <img class= "adverts" src="images/edited/advert2.jpg">
+      <span id="adTxt">Run Faster With Our New Range</span>
+    </figure>
+
+    <section id="productContainer">
+      <div id="productTitle">
+        Newest Products
+<!--currency selector-->
+        <select id="currencies">
+            <option class = "currencies" value = "0">USD</option>
+            <option class = "currencies" value = "1">GBP</option>
+            <option class = "currencies" value = "2">EUR</option>
+            <option class = "currencies" value = "3">JPY</option>
+            <option class = "currencies" value = "4">CAD</option>
+            <option class = "currencies" value = "5">CHF</option>
+        </select>
+      </div>
+      <main id="Products">
+<!--images-->
+        <img class="Image" id="firstImage" src="images/edited/a1.jpg" alt="Limited edition hat in grey.">
+        <img class="Image" id="thirdImage" src="images/edited/a3.jpg" alt="Strong, durable gym bag. Essential for anyone competing in sports.">
+        <img class="Image" id="fifthImage" src="images/edited/a5.jpg" alt="Black, protective phone case.">
+        <img class="Image" id="seventhImage" src="images/edited/a7.jpg" alt="Black 100% cotton towel.">
+<!--descriptions-->
+        <span class="Description">
+                    Limited edition hat in grey.
+                </span>
+        <span class="Description">
+                    Strong, durable gym bag. Essential for anyone competing in sports.
+                </span>
+        <span class="Description">
+                    Black, protective phone case.
+                </span>
+        <span class="Description">
+                    Black 100% cotton towel.
+                </span>
+<!--prices-->
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 12.99</span>
+        </div>
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 35.99</span>
+        </div>
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 14.99</span>
+        </div>
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 11.99</span>
+        </div>
+<!--images-->
+        <img class="Image" id="secondImage" src="images/edited/a2.jpg" alt="Limited edition hat in white.">
+        <img class="Image" id="fourthImage" src="images/edited/a4.jpg" alt="Air tight 1 litre protein shake.">
+        <img class="Image" id="sixthImage" src="images/edited/a6.jpg" alt="Rubber wrist bands.">
+        <img class="Image" id="eigthImage" src="images/edited/a8.jpg" alt="Attachable 1 litre drinking bottle.">
+<!--descriptions-->
+        <span class="Description">
+                    Limited edition hat in white.
+                </span>
+        <span class="Description">
+                    Air tight 1 litre protein shake bottle.
+                </span>
+        <span class="Description">
+                    Rubber wrist bands.
+                </span>
+        <span class="Description">
+                    Attachable 1 litre drinking bottle.
+                </span>
+<!--prices-->
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 12.99</span>
+        </div>
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 7.50</span>
+        </div>
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 0.50</span>
+        </div>
+        <div class="Price">
+          <span class="symbol">&#36 </span><span class="exactPrice"> 6.95</span>
+        </div>
+      </main>
+<!--dimmer for images-->
+      <div id="dimmer" class="dimmer">
+        <span id="close"> &times;</span>
+        <img class="enlargedImages" id="enlargeImg">
+        <div id="caption"></div>
+      </div>
+    </section>
+<!--music player-->
+    <section id="musicContainer">
+      Today's motivational song to help you at the gym is - Eye of the Tiger by Survivor:
+    <audio controls = "controls" id="music">
+      <source src="media/music.ogg" type="audio/ogg">
+      <source src="media/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+<!--custom controls-->
+      <div id= "audioBttns">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <button id="playaudio"><i class="material-icons">play_arrow</i></button>
+        <input type="range" min="0" max="100" value="0" step="1" id="seekbaraudio" class="slider">
+        <span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
+        <button id="volaudio"><i class="material-icons">volume_up</i></button>
+        <input type="range" min="0" max="1" value="1" step="0.1" id="volumeBar" class="slider">
+      </div>
+    </section>
+<!--footer with site map navigation-->   
+    <footer>
+      <span id="title2"><a href = "index.html">Primucus</a></span>
+      <ul>
+        <li id="home"><a href="index.html">Home</a></li>
+        <li id="newRange"><a href="newRange2.html">New Range</a></li>
+        <li id="mens"><a href="mens.html">Mens</a></li>
+        <li id="womens"><a href="womens.html">Womens</a></li>
+        <li id="aboutUs"><a href="aboutUs.html">History</a></li>
+        <li id="contactUs"><a href="contactUs.html">Contact Us</a></li>
+      </ul>
+<!--social media links-->
+      <section id="socialMedia">
+        <div id="facebookbtn" class="fab fa-facebook-f"></div>
+        <div id="twitterbtn" class="fab fa-twitter"></div>
+        <div id="instagrambtn" class="fab fa-instagram"></div>
+        <div id="youtubebtn" class="fab fa-youtube"></div>
+      </section>
+      <span id="signature">Designed and Built by 19003161</span>
+    </footer>
+  </body>
+
+</html>

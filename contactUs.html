@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Primucus</title>
+<!--link to external files-->
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="js/general.js" type="text/javascript" defer></script>
+    <script src="js/contactUs.js" type="text/javascript" defer></script>
+
+<!--responsive layout-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+<!--mobile nav bar-->
+    <nav id="mobileMain">
+      <span id="title"><a href = "index.html">Primucus</a></span>
+      <ul id="menu">
+<!--dropdown menu-->
+        <li class="dropdown" id="mobileDropDown">
+          <a id="dropbtn">
+            <image id="hamburger" src="images/edited/Hamburger.png"></image>
+          </a>
+<!--webpages-->
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="newRange2.html">New Range</a>
+            <a href="mens.html">Mens</a>
+            <a href="womens.html">Womens</a>
+            <a href="aboutUs.html">History</a>
+            <a href="contactUs.html">Contact Us</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+<!--desktop nav bar-->
+    <nav id="main">
+      <ul>
+        <span id="title"><a href = "index.html">Primucus</a></span>
+        <li id="home"><a href="index.html">Home</a></li>
+        <li id="newRange"><a href="newRange2.html">New Range</a></li>
+        <li id="mens"><a href="mens.html">Mens</a></li>
+        <li id="womens"><a href="womens.html">Womens</a></li>
+        <li class="dropdown" id="aboutUs"><a id="dropbtn">About Us</a>
+          <div class="dropdown-content">
+            <a href="aboutUs.html">History</a>
+            <a href="contactUs.html">Contact Us</a>
+          </div>
+        </li>
+        <li class="dropdown" id="settings"><a id="dropbtn" class="fas fa-cog"></a>
+<!--settings-->
+          <div class="dropdown-content" id="settingsDrop">
+            <a id="textIncrease">A+</a>
+            <a id="textDecrease">A-</a>
+            <a id="colourChange">Colour</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+<!--canvas based animation of logo-->
+    <canvas id="canvas" width="380" height="280"></canvas>
+<!--mailing list-->
+    <section id="mailingContainer">
+      <span>Sign Up For Our Mailing List For Updates On Our Newest Products And Offers</span>
+<!--form for inputs-->
+      <form id="form_Id">
+        <p>First Name: <br><input class="mailingInput" type="text" pattern="[A-Za-z]{0,}" id="firstName" placeholder="First Name" autocomplete="given-name" required></p>
+        <p>Surname: <br><input class="mailingInput" type="text" pattern="[A-Za-z]{0,}" id="lastName" placeholder="Surname" autocomplete="family-name" required></p>
+        <p>Email Address: <br><input class="mailingInput" type="email" id="emailaddress" placeholder="name@domain.com" autocomplete="email" required></p>
+        <input type="submit" value="Sign Up" id="sendData" />
+      </form>
+<!--output for text-->
+      <span id="output"></span>
+    </section>
+<!--footer with site map navigation-->         
+    <footer>
+      <span id="title2"><a href = "index.html">Primucus</a></span>
+      <ul>
+        <li id="home"><a href="index.html">Home</a></li>
+        <li id="newRange"><a href="newRange2.html">New Range</a></li>
+        <li id="mens"><a href="mens.html">Mens</a></li>
+        <li id="womens"><a href="womens.html">Womens</a></li>
+        <li id="aboutUs"><a href="aboutUs.html">History</a></li>
+        <li id="contactUs"><a href="contactUs.html">Contact Us</a></li>
+      </ul>
+<!--social media links-->
+      <section id="socialMedia">
+        <div id="facebookbtn" class="fab fa-facebook-f"></div>
+        <div id="twitterbtn" class="fab fa-twitter"></div>
+        <div id="instagrambtn" class="fab fa-instagram"></div>
+        <div id="youtubebtn" class="fab fa-youtube"></div>
+      </section>
+      <span id="signature">Designed and Built by 19003161</span>
+    </footer>
+  </body>
+
+</html>
